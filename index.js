@@ -1,11 +1,23 @@
-// let selectedColors = []; // [] array literal, empty array
-let selectedColors = ["red", "blue"];
-console.log(selectedColors);
-console.log(selectedColors[0]);
-selectedColors[2] = "gray";
-console.log(selectedColors);
-// objects and size of arrays are dynamic
-selectedColors[3] = 1;
-console.log(selectedColors);
-// an array is an object, so it has properties that we can access with the dot notation
-console.log(selectedColors.length);
+function greet() {
+  // body
+  console.log("Hello World");
+}
+// function declaration does not need to end with a ; because is not a statement
+
+greet(); // to call a function we use a statement => semicolon at the end
+
+// e.g. function with a variable
+function greet(name) {
+  // name is a parameter
+  console.log("Hello " + name);
+}
+
+greet("Mosh"); // "Mosh" is an argument (actual value of a parameter)
+greet("Mary");
+
+// e.g. function with 2 variables
+function greet(name, lastName) {
+  console.log("Hello " + name + " " + lastName);
+}
+
+greet("John", "Smith");
