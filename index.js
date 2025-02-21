@@ -1,20 +1,11 @@
-let person = {
-  name: "Mosh",
-  age: 30,
-}; // {} Object literal, this is an object with two properties
-
-console.log(person);
-
-// Dot notation
-person.name = "John";
-
-console.log(person.name);
-
-// Bracket notation
-person["name"];
-
-console.log(person["name"]);
-
-// Dot notation is more compact and concise => default choice
-// If we have the parameter selection at run-time => is better to use the bracket notation
-// e.g. let selection = 'name' => console.log(person[selection])
+// let selectedColors = []; // [] array literal, empty array
+let selectedColors = ["red", "blue"];
+console.log(selectedColors);
+console.log(selectedColors[0]);
+selectedColors[2] = "gray";
+console.log(selectedColors);
+// objects and size of arrays are dynamic
+selectedColors[3] = 1;
+console.log(selectedColors);
+// an array is an object, so it has properties that we can access with the dot notation
+console.log(selectedColors.length);
